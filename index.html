@@ -13,12 +13,15 @@
     PROBLEM 1: Write a code snippet that sets the attribute 'src' on the imageElement below to this placeholder image link: https://place-hold.it/400x400.
     */
     let imageElement = document.createElement('img');
-    // ENTER YOUR CODE HERE
+    imageElement.setAttribute('src', 'https://place-hold.it/400x400');
+    console.log('1', imageElement);
 
     /* 
     PROBLEM 2: Write a code snippet that sets the attribute 'href' on the element with an ID of 'link-element' to this mock URL address: http://www.example.com.
     */
-    // ENTER YOUR CODE HERE
+    let link = document.querySelector('#link-element');
+    link.setAttribute('href', 'http://www.example.com');
+    console.log('2', link);
 
     /* 
     PROBLEM 3: Write a code snippet that sets the attribute 'role' of the element with an ID of 'div-element' to 'button'. You can assume there is a div with this ID name.
