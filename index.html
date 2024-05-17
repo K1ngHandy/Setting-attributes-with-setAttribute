@@ -26,7 +26,9 @@
     /* 
     PROBLEM 3: Write a code snippet that sets the attribute 'role' of the element with an ID of 'div-element' to 'button'. You can assume there is a div with this ID name.
     */
-    // ENTER YOUR CODE HERE
+    let role = document.querySelector('#div-element');
+    role.setAttribute('role', 'button');
+    console.log(role);
 
     /* 
     PROBLEM 4: Write a code snippet that sets the 'src' attribute on an element called "newImageElement" using the 'attrName' pattern instead of the setAttribute method. You will need to create "newImageElement" first using the document's createElement() method. 
