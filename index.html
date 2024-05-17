@@ -28,19 +28,22 @@
     */
     let role = document.querySelector('#div-element');
     role.setAttribute('role', 'button');
-    console.log(role);
+    console.log('3', role);
 
     /* 
     PROBLEM 4: Write a code snippet that sets the 'src' attribute on an element called "newImageElement" using the 'attrName' pattern instead of the setAttribute method. You will need to create "newImageElement" first using the document's createElement() method. 
     */
-    // ENTER YOUR CODE HERE
+    const source = document.createElement('newImageElement');
+    source.setAttribute('src', 'http://www.example.com');
+    console.log('4', source);
 
 
     /*
     PROBLEM 5 (DEBUGGING): There is an error in this code snippet. Find and fix it.
     */
-    // let newDivElement = document.createElement('div');
-    // newDivElement.setAttribute('style', 'width: 50px');
+    let newDivElement = document.createElement('div');
+    newDivElement.style.width = '50px'; // change from "setAttribute('style', 'width: 50px')"
+    console.log('5', newDivElement);
 
   </script>
   <section
